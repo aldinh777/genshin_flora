@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "genshin_flora:blocks/flaming_flower_bottom"
+    }
+}

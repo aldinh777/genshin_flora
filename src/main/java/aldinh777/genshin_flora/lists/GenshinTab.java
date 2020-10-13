@@ -1,7 +1,6 @@
 package aldinh777.genshin_flora.lists;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -17,6 +16,6 @@ public class GenshinTab extends CreativeTabs {
     @Nonnull
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(Blocks.YELLOW_FLOWER);
+        return new ItemStack(GenshinBlocks.FLAMING_FLOWER);
     }
 }

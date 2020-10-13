@@ -1,5 +1,6 @@
 package aldinh777.genshin_flora;
 
+import aldinh777.genshin_flora.common.RegistryHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -20,6 +21,7 @@ public class GenshinFlora {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
+        RegistryHandler.init();
     }
 
     @EventHandler
