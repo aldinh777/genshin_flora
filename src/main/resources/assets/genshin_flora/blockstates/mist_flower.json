@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "half=lower": { "model": "genshin_flora:mist_flower_bottom" },
+        "half=upper": { "model": "genshin_flora:mist_flower_top" }
+    }
+}
