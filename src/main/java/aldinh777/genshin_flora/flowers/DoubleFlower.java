@@ -31,7 +31,11 @@ public class DoubleFlower extends BlockBush {
     public static final PropertyEnum<BlockDoublePlant.EnumBlockHalf> HALF = PropertyEnum.create("half", BlockDoublePlant.EnumBlockHalf.class);
 
     public DoubleFlower(String name) {
-        super(Material.PLANTS);
+        this(name, Material.PLANTS);
+    }
+
+    public DoubleFlower(String name, Material material) {
+        super(material);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER));
         this.setHardness(0.0f);
         this.setSoundType(SoundType.PLANT);
@@ -69,7 +73,9 @@ public class DoubleFlower extends BlockBush {
             Block block1 = flag ? worldIn.getBlockState(blockpos1).getBlock() : this;
 
             // Forge move above the setting to air.
-            if (!flag) this.dropBlockAsItem(worldIn, pos, state, 0);
+            if (!flag) {
+                this.dropBlockAsItem(worldIn, pos, state, 0);
+            }
 
             if (block == this) {
                 worldIn.setBlockState(blockpos, Blocks.AIR.getDefaultState(), 2);
@@ -127,6 +133,7 @@ public class DoubleFlower extends BlockBush {
         super.onBlockHarvested(worldIn, pos, state, player);
     }
 
+    @Nonnull
     @Override
     public IBlockState getStateFromMeta(int meta) {
         if (meta == 0) {

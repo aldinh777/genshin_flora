@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=lower": { "model": "genshin_flora:lotus_bottom" },
+    "half=upper": { "model": "genshin_flora:lotus_top" }
+  }
+}
