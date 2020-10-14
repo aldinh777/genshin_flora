@@ -26,11 +26,11 @@ import net.minecraft.world.World;
 import javax.annotation.Nonnull;
 import java.util.Random;
 
-public class ElementalFlower extends BlockBush {
+public class DoubleFlower extends BlockBush {
 
     public static final PropertyEnum<BlockDoublePlant.EnumBlockHalf> HALF = PropertyEnum.create("half", BlockDoublePlant.EnumBlockHalf.class);
 
-    public ElementalFlower(String name) {
+    public DoubleFlower(String name) {
         super(Material.PLANTS);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(HALF, BlockDoublePlant.EnumBlockHalf.LOWER));
         this.setHardness(0.0f);

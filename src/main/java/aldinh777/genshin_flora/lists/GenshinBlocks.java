@@ -1,6 +1,6 @@
 package aldinh777.genshin_flora.lists;
 
-import aldinh777.genshin_flora.flowers.ElementalFlower;
+import aldinh777.genshin_flora.flowers.FlamingFlower;
 import com.google.common.collect.Lists;
 import net.minecraft.block.Block;
 
@@ -13,6 +13,6 @@ public class GenshinBlocks {
     public static Block FLAMING_FLOWER;
 
     public static void init() {
-        FLAMING_FLOWER = new ElementalFlower("flaming_flower");
+        FLAMING_FLOWER = new FlamingFlower("flaming_flower");
     }
 }
