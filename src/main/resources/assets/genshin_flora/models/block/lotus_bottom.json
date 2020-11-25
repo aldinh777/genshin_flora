@@ -1,6 +1,0 @@
-{
-    "parent": "genshin_flora:block/cross_aquatic",
-    "textures": {
-        "cross": "genshin_flora:blocks/mist_flower_bottom"
-    }
-}

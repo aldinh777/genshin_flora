@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "genshin_flora:blocks/mist_flower_top"
-    }
-}
